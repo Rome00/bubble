@@ -1,0 +1,187 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+h1{
+	font-family: 'Exo 2', sans-serif;
+	font-size: 9vw;
+	color: #fff;
+	position: absolute;
+	text-shadow: 0px 4px 48px rgba(255,255,255,0.2);
+	top: 160px;
+	z-index: 100;
+	font-weight: bold;
+	overflow: visible;
+}
+.container{
+	background-image: url("img/photo-1502726299822-6f583f972e02.jpg"), linear-gradient(to bottom, #00d8ff 0%, #93fe92 100%);
+	background-size: bottom;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	overflow: hidden;
+	display: flex;justify-content: center;
+	align-content: center;
+}
+.bubble-container{
+	height: 100vh;
+	width: 800px;
+	position: relative;
+}
+.b {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    background-image: linear-gradient(to bottom,  #00c9ff 0%, #92fe9d 100%);
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    position: absolute;
+    bottom: -150px;
+
+}
+.b:nth-child(1){
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50px;
+    animation-name: example;
+     animation-duration: 5s;
+	 animation-timing-function: linear;
+	 animation-delay: 2s;
+	 animation-iteration-count: infinite;
+	 transform: translateY(20px);
+	 opacity: 0.4;
+}
+.b:nth-child(2){
+	width: 35px;
+    height: 35px;
+	position: absolute;
+	left: 100px;
+    animation-name: example;
+     animation-duration: 4s;
+	 animation-timing-function: linear;
+	 animation-delay: 5s;
+	 animation-iteration-count: infinite;
+	 transform: translateY(60px);
+	 will-change: transform;
+	 opacity: 0.5;
+}
+.b:nth-child(3){
+	width: 40px;
+    height: 40px;
+	position: absolute;
+	left: 0px;
+    animation-name: example;
+     animation-duration: 6s;
+	 animation-timing-function: linear;
+	 animation-delay: 4s;
+	 animation-iteration-count: infinite;
+	 transform: translateY(20px);
+	 opacity: 0.5;
+	 transform: translateX(158px);
+	 will-change: transform;
+}
+.b:nth-child(4){
+	width: 50px;
+    height: 50px;
+	position: absolute;
+	left: 100px;
+    animation-name: example;
+     animation-duration: 6s;
+	 animation-timing-function: linear;
+	 animation-delay: 2s;
+	 animation-iteration-count: infinite;
+	 opacity: 0.5;
+	 transform: translateX(48px);
+	 will-change: transform;
+}
+.b:nth-child(5){
+	width: 23px;
+    height: 23px;
+	position: absolute;
+	left: 200px;
+    animation-name: example;
+     animation-duration: 8s;
+	 animation-timing-function: linear;
+	 animation-delay: 4s;
+	 animation-iteration-count: infinite;
+	 opacity: 0.5;
+	 transform: translateX(18px);
+	 will-change: transform;
+}
+.b:nth-child(6){
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	left: 300px;
+    animation-name: example;
+     animation-duration: 7s;
+	 animation-timing-function: linear;
+	 animation-delay: 2s;
+	 animation-iteration-count: infinite;
+	 opacity: 0.5;
+	 transform: translateX(15px);
+	 will-change: transform;
+}
+.b:nth-child(7){
+	width: 42px;
+    height: 42px;
+	position: absolute;
+	left: 20px;
+    animation-name: example;
+     animation-duration: 5s;
+	 animation-timing-function: linear;
+	 animation-delay: 1s;
+	 animation-iteration-count: infinite;
+	 opacity: 0.5;
+	 transform: translateX(38px);
+	 will-change: transform;
+}
+.b:nth-child(8){
+	width: 10px;
+    height: 10px;
+	position: absolute;
+	left: 400px;
+    animation-name: example;
+     animation-duration: 9s;
+	 animation-timing-function: linear;
+	 animation-delay: 5s;
+	 animation-iteration-count: infinite;
+	 opacity: 0.5;
+	 transform: translateX(68px);
+	 will-change: transform;
+}
+.b:nth-child(9){
+	width: 37px;
+    height: 37px;
+	position: absolute;
+	left: 500px;
+    animation-name: example;
+     animation-duration: 6s;
+	 animation-timing-function: linear;
+	 animation-delay: 3s;
+	 animation-iteration-count: infinite;
+	 opacity: 0.5;
+}
+.b:nth-child(10){
+	width: 62px;
+    height: 62px;
+	position: absolute;
+	left: 350px;
+    animation-name: example;
+     animation-duration: 7s;
+	 animation-timing-function: linear;
+	 animation-delay: 4s;
+	 animation-iteration-count: infinite;
+	 opacity: 0.5;
+}
+
+@keyframes example {
+  0%   {background-color: rgba(0,0,0,0); bottom:0px;}
+  25%  {bottom: 200px;}
+  50%  {bottom: 400px; transform: translateY(10px);}
+  75%  {bottom: 600px;transform: translateY(15px);}
+  100% {bottom: 800px transform: translateY(20px);}
+}
